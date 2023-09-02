@@ -29,18 +29,18 @@
             </ul>
 
             <div class="sidebar-btn">
-                <i class="fa-sharp fa-solid fa-star-of-life fa-rotate-90 fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-sharp fa-solid fa-star-of-life fa-rotate-90 fa-xl" style="color: #ffffff;"></i>
             </div>
 
         </nav>
         <!-- sidebar menu -->
         <div class="sidebar">
-            <li><a href="#home">Jaimin</a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutMe">About</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            </li>
+            <li><a href="#social">Social's</a></li>
+            
         </div>
     </header>
 
@@ -235,7 +235,7 @@
 
 
 
-    <footer>
+    <footer id="social">
         <!-- <a href="https://github.com/jaimiin5"><img src="/git.png" placeholder="Github"></a> -->
         <a href="https://github.com/jaimiin5"><img src="public/git.png" placeholder="Github"></a>
 
@@ -323,13 +323,15 @@
         const starBtn = document.querySelector('.sidebar-btn')
         const sideBar = document.querySelector('.sidebar')
         const starBtn2 = document.querySelector('.sidebar-btn i')
+        const content = document.querySelector('.content')
         starBtn.onclick = () => {
             sideBar.classList.toggle('open')
             const isOpen = sideBar.classList.contains('open')
+            content.classList.toggle('blurred');
 
             starBtn2.classList = isOpen
-                ? 'fa-sharp fa-solid fa-star-of-life fa-rotate-90'
-                : 'fa-sharp fa-solid fa-star-of-life'
+            ? 'fa-sharp fa-solid fa-star-of-life fa-rotate-90 fa-xl'
+            : 'fa-sharp fa-solid fa-star-of-life fa-xl'
         }
 
 
