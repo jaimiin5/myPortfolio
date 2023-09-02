@@ -540,6 +540,8 @@ footer img {
         /* border:2px solid #333; */
         position: relative;
         left: 10px;
+        bottom: 120px;
+        
     }
 
     /* PROJECT-CARD-1  */
@@ -737,7 +739,7 @@ footer img {
         align-items: center;
 
         height: 400px;
-        width: 300px;
+        width: 370px;
 
         border: 1px solid whitesmoke;
         border-radius: 7px;
